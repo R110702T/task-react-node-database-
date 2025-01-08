@@ -293,7 +293,7 @@ function Form() {
         <div className="form_group">
           <label htmlFor="zip_code">Zip Code:</label>
           <input
-            type="text"
+            type="number"
             id="zip_code"
             name="zip_code"
             value={formData.zip_code}
@@ -302,7 +302,7 @@ function Form() {
         </div>
 
         {/* Display global error message if form is invalid */}
-        {formError && <div style={{ color: 'green' }}>{formError}</div>}
+        {formError && <div style={{ color: 'red' }}>{formError}</div>}
 
         <button type="submit" disabled={!!formError}>
           Submit
