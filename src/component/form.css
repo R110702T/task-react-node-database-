@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9bccd3;
+  font-family: Arial, sans-serif;
+}
+
+
+form {
+  background-image:linear-gradient(rgb(104, 201, 109),rgb(202, 216, 122));
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Space between columns and rows */
+  grid-template-rows: auto; /*  rows to grow automatically */
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form_group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form_group input:focus {
+  border-color: #007BFF;
+}
+
+form h3 {
+  background-color: #60959c;
+  padding:6px;
+  border-radius:10px;
+  grid-column: span 2;
+   color: #333;
+}
+
+button {
+  background-color: #1fa12a;
+  color: rgb(20, 11, 11);
+  padding: 12px;
+ font-weight:bold;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 50%;
+  margin-left:170px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  grid-column: span 2; /* Makes the button span across both columns */
+}
+
+
+button:disabled {
+  background-color:rgb(216, 133, 168);
+  font-weight:bold;
+  cursor: not-allowed;
+}
+
+div[style*="color: red"] {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
