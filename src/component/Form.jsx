@@ -302,7 +302,7 @@ function Form() {
         </div>
 
         {/* Display global error message if form is invalid */}
-        {formError && <div style={{ color: 'red' }}>{formError}</div>}
+        {formError && <div style={{ color: 'yellow' }}>{formError}</div>}
 
         <button type="submit" disabled={!!formError}>
           Submit
